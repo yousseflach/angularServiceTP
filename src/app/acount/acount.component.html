@@ -1,0 +1,10 @@
+<div class="flex flex-col p-4 border border-solid rounded-md border-black bg-white">
+    <h2 class="flex mb-2">{{title}}</h2>
+    <hr>
+    <p class="flex mt-3 mb-2">{{status}}</p>
+    <div class=" flex flex-row justify-around gap-2">
+        <button (click)="toActive()" class="border border-gray-500 px-4 py-1 rounded-lg hover:bg-slate-300">Set to active</button>
+        <button (click)="toInActive()" class="border border-gray-500 px-4 py-1 rounded-lg hover:bg-slate-300">Set to inactive</button>
+        <button (click)="toUknown()" class="border border-gray-500 px-4 py-1 rounded-lg hover:bg-slate-300">Set to unknown</button>
+    </div>
+</div>
