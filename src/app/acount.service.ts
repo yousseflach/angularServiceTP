@@ -15,4 +15,8 @@ export class AcountService {
     changeStatus(status: string, id: number){
         this.acounts[id].status = status;
     }
+
+    addNewAcount(ntitle: string, nstatus: string){
+        this.acounts.unshift({title: ntitle, status: nstatus});
+    }
 }

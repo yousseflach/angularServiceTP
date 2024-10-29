@@ -1,3 +1,4 @@
 <div class="flex flex-col gap-2 w-full justify-center items-center bg-red-200">
+  <app-new-acount></app-new-acount>
   <app-acount *ngFor="let acount of accounts; let i = index" [title]="acount.title" [status]="acount.status" [id]="i"></app-acount>
 </div>
